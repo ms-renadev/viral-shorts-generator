@@ -1,0 +1,39 @@
+# ==============================================================================
+# Viral Shorts Generator - Python Dependencies
+# Tested on Python 3.10 / 3.11
+# ==============================================================================
+
+# --- Downloading ---
+yt-dlp>=2024.8.6
+
+# --- Transcription ---
+openai-whisper>=20231117
+faster-whisper>=1.0.3          # optional, much faster CTranslate2-based backend
+deepgram-sdk>=3.5.0             # optional alternative transcription backend
+
+# --- LLM Providers ---
+openai>=1.40.0
+anthropic>=0.34.0
+
+# --- Computer Vision / Face & Speaker Tracking ---
+opencv-python>=4.10.0.84
+mediapipe>=0.10.14
+numpy>=1.26.4
+
+# --- Video / Audio Editing ---
+moviepy>=1.0.3
+ffmpeg-python>=0.2.0
+pydub>=0.25.1
+imageio>=2.34.2
+imageio-ffmpeg>=0.5.1
+
+# --- Utilities ---
+python-dotenv>=1.0.1
+tqdm>=4.66.5
+requests>=2.32.3
+rich>=13.7.1
+pydantic>=2.8.2
+tenacity>=8.5.0                 # retry logic for API calls
+
+# --- Font / Text rendering helpers used by editor.py caption engine ---
+Pillow>=10.4.0
